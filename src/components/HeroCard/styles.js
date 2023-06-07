@@ -16,6 +16,11 @@ export const CardWrapper = styled.div`
 
   transition: all 0.3s ease-in-out;
   background: rgba(0, 0, 0, 0.4);
+  h2 {
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    text-align: center;
+  }
   ${(props) =>
     props.choosen &&
     css`
