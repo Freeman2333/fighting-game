@@ -2,7 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 
 import ChooseFighter from "./pages/ChooseFighter/ChooseFighter";
-import Fight from "./pages/Fight ";
+import Fight from "./pages/Fight/Fight ";
+import HeroContextProvider from "./context/HeroContext";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -26,7 +27,7 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <>
+    <HeroContextProvider>
       <GlobalStyle />
       <Router>
         <Routes>
@@ -34,7 +35,7 @@ function App() {
           <Route path="/fight" element={<Fight />} />
         </Routes>
       </Router>
-    </>
+    </HeroContextProvider>
   );
 }
 

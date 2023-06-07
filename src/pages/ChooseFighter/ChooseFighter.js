@@ -12,13 +12,22 @@ import {
 import { heroes } from "../../mocks/heroes";
 import { HeroCard } from "../../components/HeroCard";
 import { matrixMovement } from "../../helpers";
+import { useHeroes } from "../../hooks/useHeroes";
 
 const findInMatrix = (i, j) => MATRIX[i][j];
+
 const ChooseFighter = () => {
+  const { selectHeroAndPush } = useHeroes();
+
   const [position, setPosition] = useState([0, 0]);
   useEffect(() => {
     const handleKeyDown = (event) => {
-      
+      if (event.key === "Enter") {
+        const selectedId = findInMatrix(position[0], position[1])?.id;
+        selectedId && selectHeroAndPush(selectedId);
+      }
+      matrixMovement(event, position, setPosition);
+    };
 
     document.addEventListener("keydown", handleKeyDown);
 
@@ -28,7 +37,7 @@ const ChooseFighter = () => {
     <Wrapper>
       <Heading>Виберіть бійця</Heading>
       <Notation>
-        Користуйтесь стрiлками на клавиатурі та клавішею Enter
+        Користуйтесь стрiлками на клавіатурі та клавішею Enter
       </Notation>
       <HeroesWrapper>
         {heroes?.map((el) => (
@@ -39,7 +48,9 @@ const ChooseFighter = () => {
           />
         ))}
       </HeroesWrapper>
-      <ChoosedHero>Your choise:</ChoosedHero>
+      <ChoosedHero>
+        Боєць: {findInMatrix(position[0], position[1])?.hero}
+      </ChoosedHero>
     </Wrapper>
   );
 };
