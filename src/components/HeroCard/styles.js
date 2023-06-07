@@ -18,7 +18,7 @@ export const CardWrapper = styled.div`
   ${(props) =>
     props.choosen &&
     css`
-      border: 1px solid green;
+      border: 3px solid black;
     `};
 `;
 

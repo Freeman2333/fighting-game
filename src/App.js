@@ -18,6 +18,10 @@ const GlobalStyle = createGlobalStyle`
    
     margin: 0 auto;
   }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
 `;
 
 function App() {
