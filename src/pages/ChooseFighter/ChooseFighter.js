@@ -37,7 +37,8 @@ const ChooseFighter = () => {
     <Wrapper>
       <Heading>Виберіть бійця</Heading>
       <Notation>
-        Користуйтесь стрiлками на клавіатурі та клавішею Enter
+        Користуйтесь стрiлками на клавіатурі та клавішею Enter. Після вибору
+        чекайте 2 секунди
       </Notation>
       <HeroesWrapper>
         {heroes?.map((el) => (

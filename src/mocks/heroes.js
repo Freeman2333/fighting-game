@@ -1,7 +1,7 @@
 export const heroes = [
   {
-    hero: "Centrion",
-    img: "https://proclockers.com/wp-content/uploads/2021/01/Centrion-264x300.png",
+    hero: "Sub Zero",
+    img: "https://www.freepnglogos.com/uploads/mortal-kombat-png/futuro-com-estilo-mortal-kombat-render-9.png",
     id: 1,
   },
   {
@@ -41,7 +41,7 @@ export const heroes = [
   },
   {
     hero: "Geras",
-    img: "https://proclockers.com/wp-content/uploads/2021/01/Geras-171x300.png",
+    img: "https://www.freepnglogos.com/uploads/mortal-kombat-png/file-smoke-mortal-kombat-wikipedia-8.png",
     id: 9,
   },
   {
@@ -81,7 +81,7 @@ export const heroes = [
   },
   {
     hero: "Cassie Cage",
-    img: "https://proclockers.com/wp-content/uploads/2021/01/Cassie-Cage-300x277.png",
+    img: "https://www.freepnglogos.com/uploads/mortal-kombat-png/total-mortal-kombat-mood-who-your-character-15.png",
     id: 17,
   },
   {
@@ -106,7 +106,7 @@ export const heroes = [
   },
   {
     hero: "D\u2019Vorah",
-    img: "https://proclockers.com/wp-content/uploads/2021/01/DVorah-300x277.png",
+    img: "https://www.freepnglogos.com/uploads/mortal-kombat-png/renders-mkx-mobile-gal-xia-mortal-kombat-4.png",
     id: 22,
   },
   {
@@ -158,11 +158,6 @@ export const heroes = [
     hero: "Shao Khan",
     img: "https://proclockers.com/wp-content/uploads/2021/01/Shao-Kahn-300x277.png",
     id: 32,
-  },
-  {
-    hero: "Rambo",
-    img: "https://proclockers.com/wp-content/uploads/2021/01/Rambo-263x300.png",
-    id: 33,
   },
   {
     hero: "Robocop",

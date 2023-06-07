@@ -13,11 +13,17 @@ export const useHeroes = () => {
     const selectedHero = heroes.find((hero) => hero.id === id);
     if (selectedHero) {
       setSelectedHero(selectedHero);
-      navigate("/fight");
+      setTimeout(() => {
+        navigate("/fight");
+      }, [2000]);
     }
   };
 
+  const getRandomHero = () =>
+    heroes ? heroes[Math.floor(Math.random() * heroes.length)] : null;
+
   return {
     selectHeroAndPush,
+    getRandomHero,
   };
 };

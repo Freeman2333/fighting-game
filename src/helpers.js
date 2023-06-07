@@ -2,6 +2,8 @@ import { heroes } from "./mocks/heroes";
 
 export const MATRIX_SIZE = [6, 6];
 
+export const KEYS_TO_CHANGE_EMOJIES = ["q", "w", "e", "r", "t", "y"];
+
 export const MATRIX = ((i, j) => {
   const matrix = new Array(i).fill(0).map(() => new Array(j).fill(0));
 
@@ -60,3 +62,8 @@ export const matrixMovement = (event, position, setPosition) => {
   }
   setPosition([iCurrent, jCurrent]);
 };
+
+export const updateEmojiByIndex = (event) =>
+  event.type === "keyup" &&
+  KEYS_TO_CHANGE_EMOJIES.includes(event.key) &&
+  KEYS_TO_CHANGE_EMOJIES.indexOf(event.key);

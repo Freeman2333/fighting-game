@@ -6,6 +6,7 @@ export const FightWrapper = styled.div`
   align-items: center;
   height: 100%;
   width: 100%;
+  padding: 30px 0;
 `;
 
 export const FightHeading = styled.h1`
@@ -15,6 +16,7 @@ export const FightHeading = styled.h1`
   justify-content: center;
   text-align: center;
   font-weight: medium;
+  margin-bottom: 20px;
 `;
 
 export const IconsWrapper = styled.div`

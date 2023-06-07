@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 30px 0;
 `;
 
 export const Heading = styled.h1`
@@ -28,7 +29,7 @@ export const HeroesWrapper = styled.div`
 
 export const Notation = styled.span`
   color: gray;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 `;
 
 export const ChoosedHero = styled.p`
